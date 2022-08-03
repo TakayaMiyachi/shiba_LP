@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<?php
+  //カウント数が記録してあるファイルを読み書きできるモードで開く
+  $fp = fopen('count.dat', 'r+b');
+
+  //ファイルを排他ロックする
+  flock($fp, LOCK_EX);
+
+  //ファイルからカウント数を取得する
+  $count = fgets($fp);
+
+  //カウント数を1増やす
+
+  $count++;
+?>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="～イラストレーターになりたいそこのあなたへ。～｜illustratorの基礎技術を3ヵ月で完全伝授！！！エピソードを用いて分かりやすく説明しています。是非一度ご覧ください！">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+  <title>イラストレーターになりたいそこのあなたへ。</title>
+</head>
+<script src="/js/index.js"></script>
+<header class="ly_header">
+  <h1 class="el_hdg1">イラストレーターになりたいそこのあなたへ。</h1>
+</header>
+<body>
+  <div class="ly_wrapper">
+    <div class="bl_cont">
+      好きじゃない！<br>
+      楽しくもない！
+    </div>
+    <div class="bl_cont">
+      そんな仕事を<br>
+      このまま続けるのは嫌。
+    </div>
+    <div class="bl_cont hp_red">
+      時間とお金に縛られず<br>
+      自由な生活を送りたいのに
+    </div>
+    <div class="bl_cont">
+      <span class="hp_blue">
+        忙しくて勉強する時間が無いと<br>
+        ついつい言い訳してしまう
+      </span><br>
+      24歳女性が
+    </div>
+    <div class="bl_cont">
+      たった3ヵ月で<br>
+      <span class="hp_red">Illustratorの基礎技術を</span><br>
+      習得することで
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">自分に自信を持って</span>を<br>
+      時間やお金にに縛らせず<br>
+      楽しくデザイナーとして<br>
+      仕事をする方法
+    </div>
+    <div class="bl_cont">
+      <img src="/img/S__89358405.jpg" alt=""><br>
+      <span class="hp_red">「毎日が充実している！」</span><br>
+      と自信をもって言えますか？
+    </div>
+    <div class="bl_txtL">
+      なんとなくで<br>
+      今の仕事を選んでしまい
+    </div>
+    <div class="bl_txtL">
+      毎日決まった時間に<br>
+      楽しくない仕事を<br>
+      嫌々続けているあなた。
+    </div>
+    <div class="bl_txtL">
+      何か変わらなきゃ。<br>
+      そう思ってはいるけど<br>
+      何から変えていいのか<br>
+      わからないあなた。
+    </div>
+    <div class="bl_txtL">
+      本当は辞めたいのに<br>
+      その一歩が<br>
+      踏み出せないあなた。
+    </div>
+    <div class="bl_txtL">
+      そんな毎日を<br>
+      変えませんか！
+    </div>
+    <div class="bl_txtL">
+      一度きりの自分の人生<br>
+      <span class="hp_red">自分の好きな事</span>を<br>
+      仕事にしませんか？
+    </div>
+    <div class="bl_txtL">
+      そんな方に<span>”デザイナー”</span><br>
+      という職について<br>
+      知ってほしいんです。
+    </div>
+    <div class="bl_txtL">
+      そしてデザインの基礎を習得し<br>
+      <span class="hp_red">楽しく自分に自信をもって</span><br>
+      仕事をしませんか？
+    </div>
+    <div class="bl_txtL">
+      時間やお金に縛られず<br>
+      充実した毎日を送りませんか？
+    </div>
+    <div class="bl_txtL">
+      そう思っている<br>
+      そこのあなたに<br>
+      ぜひ読んでほしい！
+    </div>
+    <div class="bl_txtL">
+      このブログを読んで<br>
+      あなたが変わる<br>
+      きっかけにしてほしい。
+    </div>
+    <div class="bl_txtL">
+      理想の未来を想像し<br>
+      ワクワクしながらブログを<br>
+      読んでみてくださいね！
+    </div>
+    <div class="bl_txtL">
+      ここから話すのは<br>
+      思い通りの人生が歩めず<br>
+      毎日仕事に行くのが苦痛で
+    </div>
+    <div class="bl_txtL">
+      変わらなきゃ...<br>
+      とわかっていながら<br>
+      ついつい忙しいことを理由に<br>
+      言い訳していた友人が
+    </div>
+    <div class="bl_txtL">
+      時間やお金に縛られず<br>
+      本来思い描いていた<br>
+      理想の人生を手に入れた<br>
+      そんな大逆転物語。<br>
+    </div>
+    <div class="bl_cont">
+      元々の私は<br>
+      <span class="hp_blue">全く魅力的な女性</span>では<br>
+      ありませんでした。
+      <img src="/img/istockphoto-680834894-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      私は３年前、<br>
+      進学と就職に悩み
+    </div>
+    <div class="bl_txtL hp_blue">
+      「就職はまだしたくない」<br>
+      「やりたいことも分からない」<br>
+      「でも進学は学費がかかって苦しい」
+    </div>
+    <div class="bl_txtL">
+      悩んだ末に結局、<br>
+      就職を選びました。
+    </div>
+    <div class="bl_txtL">
+      待っていたのは<br>
+      地獄のような日々。
+    </div>
+    <div class="bl_txtL">
+      毎日決まった時間に出社し、<br>
+      同じことを繰り返す。
+    </div>
+    <div class="bl_txtL">
+      おまけに<br>
+      職場の人間関係は最悪。
+    </div>
+    <div class="bl_txtL">
+      私は毎日毎日<br>
+      何をしているんだろうと<br>
+      夜な夜な泣くことも<br>
+      たくさんあった。
+    </div>
+    <div class="bl_cont hp_blue">
+      辞めたいと思っても<br>
+      辞める勇気もなかった。
+      <img src="/img/istockphoto-1163040304-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      楽しみなはずの休日すら<br>
+      <span class="hp_blue">「また月曜日から仕事か...」</span><br>
+      なんて考えてしまい
+    </div>
+    <div class="bl_txtL">
+      せっかくの休日も頭の中から<br>
+      仕事のことが離れない。
+    </div>
+    <div class="bl_txtL">
+      なんで私だけ<br>
+      こんなにつらいんだろうと<br>
+      毎日毎日悩んでいたのです。
+    </div>
+    <div class="bl_txtL">
+      そんなある日、<br>
+      高校時代の親友から<br>
+      ご飯のお誘いがありました。
+    </div>
+    <div class="bl_txtL">
+      ご飯にいくと当然のように<br>
+      仕事の話になるんです。
+    </div>
+    <div class="bl_txtL">
+      毎日仕事のせいで<br>
+      悩まされている私と違い
+    </div>
+    <div class="bl_txtL">
+      仕事の話を<br>
+      楽しそうにする友人。
+    </div>
+    <div class="bl_txtL">
+      それもそのはず。
+    </div>
+    <div class="bl_cont">
+      高校から憧れだった<br>
+      ネイリストとして<br>
+      楽しく仕事をしてると<br>
+      <span class="hp_red">＂活気ある友人＂</span>と
+    </div>
+    <div class="bl_cont">
+      やりたいことも<br>
+      見つけることができず
+    </div>
+    <div class="bl_cont">
+      適当に選んだ就職先で<br>
+      嫌々、仕事をしている<br>
+      <span class="hp_blue">＂今の私＂</span><br>
+      <img src="/img/istockphoto-1269712955-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      そんな友人と自分を<br>
+      ついつい比べてしまう...。
+    </div>
+    <div class="bl_txtL">
+      <span>「私はなんの為に仕事してんだろ...」</span><br>
+      <span>「なんでこんなに悩んでるんだろ...」</span><br>
+      とより考えるようになりました。
+    </div>
+    <div class="bl_txtL">
+      このままでは嫌だ。
+    </div>
+    <div class="bl_txtL">
+      毎日笑顔で楽しく<br>
+      心に余裕のある人生を歩みたい！
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_red">「一度きりの人生、<br>もっと自由に楽しく<br>生きていきたい」</span>
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">
+        何か新しいことに<br>
+        挑戦しなきゃだめだ！<br>
+        と思い、
+      </span>
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">
+        仕事を辞める
+      </span><br>
+      決意しました。<br>
+      <img src="/img/istockphoto-1224887084-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      ひとまず、<br>
+      自分が何ができるかを<br>
+      考えました。
+    </div>
+    <div class="bl_txtL">
+      うーん。<br>
+      なにもない。
+    </div>
+    <div class="bl_txtL">
+      特にずば抜けた<br>
+      才能がある訳でもなく
+    </div>
+    <div class="bl_txtL">
+      平凡に生きてきた分<br>
+      なんの仕事が向いてるか<br>
+      まったくわからない。
+    </div>
+    <div class="bl_txtL">
+      そんな時、友人から<br>
+      「美術館に行かない？」<br>
+      とお誘いがありました。
+    </div>
+    <div class="bl_txtL">
+      そんな呑気に<br>
+      美術館なんて<br>
+      行ってる暇ないよ。
+    </div>
+    <div class="bl_txtL">
+      そう返信しかけましたが、<br>
+      また心に余裕が<br>
+      なくなっていることに気づき、
+    </div>
+    <div class="bl_txtL">
+      気分転換も兼ねて<br>
+      友人の誘いに乗ることに。
+    </div>
+    <div class="bl_cont">
+      その選択が<br>
+      今後の人生を<br>
+      大きく変えるとは...！<br>
+      <img src="/img/1b5e38f4ce93c08f00c458f3fc0b8078_t.jpeg" alt="">
+    </div>
+    <div class="bl_txtL">
+      良い気分転換になったな〜<br>
+      なんて写真を見返しながら<br>
+      ふと思ったんです。
+    </div>
+    <div class="bl_txtL">
+      「私って昔から絵を書いたり<br>
+      　見るのが好きだな。」
+    </div>
+    <div class="bl_txtL">
+      なんとなくだけど、<br>
+      絵に関することなら<br>
+      やりたい事をしながら<br>
+      自由で楽しく仕事をできるかも！
+    </div>
+    <div class="bl_txtL">
+      でもそんな私には<br>
+      大きな壁が...！
+    </div>
+    <div class="bl_txtL">
+      絵を書くのは好きだけど、<br>
+      上手くないしセンスもない。
+    </div>
+    <div class="bl_cont">
+      私より<span class="hp_red">上手い人</span>を<br>
+      周りにたくさんいるから<br>
+      <span class="hp_blue">なれるわけがない</span>。<br>
+      <img src="/img/images-1.jpeg" alt="">
+    </div>
+    <div class="bl_txtL">
+      絵をかくのは無理だけど、<br>
+      どうかにかデザインに関することを<br>
+      仕事に出来ないかと考えるが、
+    </div>
+    <div class="bl_txtL">
+      ・画家<br>
+      ・漫画家<br>
+      ・イラストレーター
+    </div>
+    <div class="bl_txtL">
+      思い浮かぶのは<br>
+      「絵を描く」仕事ばかり
+    </div>
+    <div class="bl_txtL">
+      私の書いた絵を<br>
+      人前に出すほど<br>
+      自信がない。
+    </div>
+    <div class="bl_txtL">
+      私のデザインが<br>
+      評価されるわけがない。
+    </div>
+    <div class="bl_txtL">
+      やっぱり私には<br>
+      何もできない
+    </div>
+    <div class="bl_txtL">
+      考えれば考えるほど<br>
+      マイナスなことしか出てこず<br>
+      ネガティブになるばかり。
+    </div>
+    <div class="bl_cont">
+      <img src="/img/istockphoto-487716560-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      以前は、<br>
+      仕事もその時の自分自身も<br>
+      嫌で辞めたはずなのに<br>
+      「自分は前から何か変わったのか」
+    </div>
+    <div class="bl_txtL">
+      辞めると決めたのに<br>
+      前以上に上手くいっておらず<br>
+      自信なんて全くない。
+    </div>
+    <div class="bl_txtL">
+      自由になりたくて辞めたのに<br>
+      結局自分自身の悩みに<br>
+      縛られて潰れそうでした。
+    </div>
+    <div class="bl_txtL hp_blue">
+      「あの時仕事を辞めたのは<br>
+      間違いだったのかな」
+    </div>
+    <div class="bl_txtL hp_blue">
+      「あのまま我慢していた方が<br>
+      良かったのかな」
+    </div>
+    <div class="bl_cont">
+      この選択が<br>
+      間違っていたのかと<br>
+      思ってしまうほどで
+    </div>
+    <div class="bl_cont">
+      <span class="hp_blue">仕事を辞めたことを</span><br>
+      後悔し始め、悩む日が<br>
+      また増えました。<br>
+      <img src="/img/istockphoto-1014525974-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      そんな日が続くほど、何もかも<br>
+      やる気さえなくなってきちゃう...。
+    </div>
+    <div class="bl_txtL">
+      本当にどうすればいいのか<br>
+      分からなくて途方にくれました。
+    </div>
+    <div class="bl_txtL hp_blue">
+      「ああ、もうダメだ」<br>
+      「何もかも<br>
+      上手くいく気がしない」
+    </div>
+    <div class="bl_txtL">
+      食欲も人に会う意欲も<br>
+      なくなってまるで<br>
+      抜け殻のようでした。
+    </div>
+    <div class="bl_txtL">
+      正直、何の為に生きているのか<br>
+      分からないくらい<br>
+      <span class="hp_blue">どん底</span>にいました。
+    </div>
+    <div class="bl_txtL">
+      そんな時
+    </div>
+    <div class="bl_txtL">
+      久しぶりに<br>
+      小中一緒で家も近く
+    </div>
+    <div class="bl_txtL">
+      部活の同じで<br>
+      とても仲がよかった後輩と<br>
+      ご飯にいきました。
+    </div>
+    <div class="bl_txtL">
+      すると<br>
+      <span class="hp_red">
+        「今フリーで<br>
+        　デザイナーしてるんだ」
+      </span><br>
+      自信満々にいう彼女。
+    </div>
+    <div class="bl_txtL">
+      私の身近に<br>
+      デザイナーを<br>
+      している人を知り、
+    </div>
+    <div class="bl_txtL">
+      藁にもすがる思いで<br>
+      その後輩に<br>
+      悩みを全て話しました。
+    </div>
+    <div class="bl_txtL">
+      すると<br>
+      <span class="hp_red">
+        「私で良ければデザインや<br>
+        デザイナーとして必要なこと<br>
+        教えるよ！」
+      </span>
+    </div>
+    <div class="bl_txtL">
+      と言ってくれて<br>
+      <span>
+        私にデザインを教える先生に<br>
+        なってもらいました。
+      </span>
+    </div>
+    <div class="bl_cont">
+      いま思えば<br>
+      その小さな変化で<br>
+      １つずつ吸収していき<br>
+      私はだんだん<br>
+      <span class="hp_red">変わっていたんです</span><br>
+      <img src="/img/image001-15.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      手始めに、<br>
+      <span>
+        「デザイナーって<br>
+        どんな職業か知ってる？」
+      </span><br>
+      と聞かれました。
+    </div>
+    <div class="bl_txtL">
+      ”デザイナー”という<br>
+      単語は聞いたことあるくらいで<br>
+      何をしているか詳しくしらない。
+    </div>
+    <div class="bl_txtL">
+      それではだめだと<br>
+      すぐにデザインをするのではなく
+    </div>
+    <div class="bl_txtL">
+      <span>デザインやデザイナーについて</span><br>
+      ひとまず教えてくれたんです。
+    </div>
+    <div class="bl_txtL hp_blue">
+      「難しそうだな」<br>
+      「私がデザイナーに<br>
+      ほんとになれるのかな」
+    </div>
+    <div class="bl_txtL">
+      と不安だらけの私は<br>
+      今にも諦めたいぐらいでした。
+    </div>
+    <div class="bl_txtL">
+      しかし、絵を書くことや<br>
+      見ることは好きだし、
+    </div>
+    <div class="bl_txtL">
+      何よりも今の人生を変えたい。
+    </div>
+    <div class="bl_txtL">
+      そんな思いを胸に<br>
+      後輩のデザイナーから<br>
+      教わることは
+    </div>
+    <div class="bl_txtL hp_red">
+      全部素直にやり<br>
+      ひたすら勉強しました。
+    </div>
+    <div class="bl_txtL">
+      本気でやり始めて<br>
+      1週間が経つ頃には
+    </div>
+    <div class="bl_txtL">
+      「実際に<span class="hp_red">デザイン</span>してみたい！」<br>
+      「<span class="hp_red">パソコン</span>を使いこなし、<br>
+      デザイナーとして働きたい！」
+    </div>
+    <div class="bl_txtL">
+      とやる気に満ち溢れていたんです。 
+    </div>
+    <div class="bl_txtL">
+      ロゴマークやチラシ、<br>
+      webサイトのデザインや名刺、<br>
+      デザインしてみたいことで<br>
+      頭がいっぱいに！ 
+    </div>
+    <div class="bl_txtL">
+      そんなデザインをするための<br>
+      <span class="hp_red">・デザインの進め方</span><br>
+      <span class="hp_red">・Illustratorの使い方</span><br>
+      <span>全てを教えてもらいました。</span><br>
+      <br>
+    </div>
+    <div class="bl_txtL">
+      最初は色々覚えることとあり<br>
+      正直大変でした。<br>
+      <br>
+    </div>
+    <div class="bl_txtL">
+      ですが<br>
+      思っていたよりも<br>
+      簡単に作ることができ
+    </div>
+    <div class="bl_txtL">
+      分からない時はすぐに<br>
+      聞くことができ、
+    </div>
+    <div class="bl_txtL">
+      初心者の私に<br>
+      合わせてくれながら<br>
+      一緒に進めてくれる。
+    </div>
+    <div class="bl_txtL">
+      この存在がなければ<br>
+      絶対に今の私はありません。
+    </div>
+    <div class="bl_cont">
+      デザインの基礎を学び<br>
+      <span class="hp_red">デザイナー</span>への道を確実に<br>
+      進んでいました<br>
+      <img src="/img/istockphoto-959469816-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      自分自身は気づかなかったけど<br>
+      <span class="hp_red">「笑顔も増えてなんか楽しそうだね」</span><br>
+      <span>なんて友人から</span><br>
+      <span>言われるようになりました！</span>
+    </div>
+    <div class="bl_txtL">
+      そんなある日<br>
+      学生時代の元バイト先の<br>
+      パン屋さんに行って
+    </div>
+    <div class="bl_txtL">
+      今、デザイナーになるために<br>
+      デザインの勉強をしていることを<br>
+      店長に話したところ
+    </div>
+    <div class="bl_txtL">
+      「パン屋の期間限定の<br>
+      広告作りたいんだよね。」<br>
+      「出来たらロゴマークも変えたい」
+    </div>
+    <div class="bl_txtL">
+      と教えてくれたのです。
+    </div>
+    <div class="bl_txtL">
+      「私がやりますよ！」<br>
+      そう一言言えばいいのに
+    </div>
+    <div class="bl_txtL hp_blue">
+      「そうなんですね。」<br>
+      としか言えない自分がいました。
+    </div>
+    <div class="bl_txtL hp_blue">
+      そうなんです。<br>
+      私にできるか自信が<br>
+      なかったんです。
+    </div>
+    <div class="bl_txtL">
+      その日の夜、たった一言<br>
+      「私にやらせてください。」<br>
+      と言えなかったことを<br>
+      本当に後悔しました。
+    </div>
+    <div class="bl_txtL">
+      結局今までと<br>
+      何も変わっていない自分。
+    </div>
+    <div class="bl_txtL">
+      そんな自分が嫌で変わりたくて<br>
+      デザインについて教えてくれた<br>
+      後輩にLINEをしました。
+    </div>
+    <div class="bl_txtL">
+      すると後輩は<br>
+      <img class="un_line_img" src="/img/S__89358412.jpg" alt=""><br>
+      ※)実際に後輩が私に<br>
+      　送ってくれたLINEです。
+    </div>
+    <div class="bl_txtL">
+      こんなふうに背中を<br>
+      押してもらえたんです。
+    </div>
+    <div class="bl_txtL">
+      私は今までの自分じゃない。<br>
+      そして最強で最強の仲間もいる。
+    </div>
+    <div class="bl_txtL">
+      すぐにお店に向かい<br>
+      広告とロゴマークの作成を<br>
+      「私にやらせてください。」<br>
+      とお願いすることができました。
+    </div>
+    <div class="bl_cont">
+      これが初めての<span class="hp_red">初めての</span><br>
+      <span class="hp_red">実際の仕事</span>となり<br>
+      デザイナーとしての<br>
+      <span class="hp_red">大きな1歩</span>になりました<br>
+      <img src="/img/istockphoto-876613924-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      ほんとに私にできるかなって<br>
+      不安に押しつぶされそうに<br>
+      なることもあったけど
+    </div>
+    <div class="bl_txtL">
+      頼まれることや<br>
+      誰かの役に立っていることの<br>
+      <span class="hp_red">嬉しさ</span>が大きく
+    </div>
+    <div class="bl_txtL">
+      後輩に頼りながら<br>
+      ロゴマークと広告を<br>
+      完成することができました。
+    </div>
+    <div class="bl_txtL">
+      その作ったものを見せると
+    </div>
+    <div class="bl_txtL">
+      「完璧！」<br>
+      と一言！
+    </div>
+    <div class="bl_txtL">
+      そして、<br>
+      「想像以上の出来で<br>
+      　すぐに使いたい！」<br>
+      と言っていただけました。
+    </div>
+    <div class="bl_txtL">
+      このとき、初めて<br>
+      <span class="hp_red">認めてもらった</span>ような気がして<br>
+      ニヤニヤが止まらず、<br>
+      <span class="hp_red">本当に嬉しかったのを覚えています！</span>
+    </div>
+    <div class="bl_txtL">
+      それがきっかけで<br>
+      「デザインって楽しい！」
+    </div>
+    <div class="bl_txtL">
+      「私のデザインが<br>
+      誰かの役に立てるって嬉しい！」
+    </div>
+    <div class="bl_txtL">
+      「好きなデザインで<br>
+      仕事をしたい！」
+    </div>
+    <div class="bl_txtL">
+      と本気で思うことが出来ました。
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">
+        新しいことに<br>
+        挑戦することで
+      </span>
+    </div>
+    <div class="bl_cont">
+      自分自身の成長を<br>
+      感じることができ
+    </div>
+    <div class="bl_cont">
+      まったくなかった<br>
+      <span class="hp_red">自信がついた</span>んです！<br>
+      <img src="/img/istockphoto-1218228957-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      最初は<br>
+      <span>
+        デザインについて
+        <span class="hp_blue">何もわからず</span>
+      </span><br>
+      <span>
+        <span class="hp_blue">何をしていいかもわからない</span>状態、<br>
+      </span>
+    </div>
+    <div class="bl_txtL">
+      絵を描くことは<br>
+      好きだけど上手くない。
+    </div>
+    <div class="bl_txtL">
+      デザイナーになんて<br>
+      <span class="hp_blue">絶対なれない</span>し<br>
+      ましてやパソコンを使った<br>
+      デザイナーという職業が<br>
+      あるなんて知らなかった
+    </div>
+    <div class="bl_cont">
+      そんな私でも<br>
+      デザイナーになれた！<br>
+      <img src="/img/1635_thumbnail.jpeg" alt="">
+    </div>
+    <div class="bl_txtL">
+      その後も<br>
+      パン屋さんをきっかけに
+    </div>
+    <div class="bl_txtL">
+      後輩や知り合いに<br>
+      紹介してもらいながら
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_red">
+        フリーデザイナーとして<br>
+        仕事をいただけるように
+      </span><br>
+      なれました。 
+    </div>
+    <div class="bl_cont">
+      いつでも<br>
+      わからないところを<br>
+      聞ける存在ができたことで
+    </div>
+    <div class="bl_cont">
+      <span class="hp_blue">
+        涙が出るほど<br>
+        悩んでいた仕事</span>を辞め
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">最高の職</span>を手に入れ<br>
+      <span class="hp_red">楽しい人生</span>を手に<br>
+      入れることができた！
+    </div>
+    <div class="bl_cont">
+      好きなことを<br>
+      仕事にすることができ
+    </div>
+    <div class="bl_cont hp_red">
+      とても楽しく<br>
+      誇りを持って
+    </div>
+    <div class="bl_cont">
+      仕事をすることが<br>
+      できるようになった！<br>
+      <img src="/img/istockphoto-1217364474-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      それだけではなく、<br>
+      友達に会たびに
+    </div>
+    <div class="bl_txtL">
+      「最近笑顔が増えたね！」
+    </div>
+    <div class="bl_txtL hp_red">
+      「デザイナーなんて<br>
+      　かっこいい！」
+    </div>
+    <div class="bl_txtL hp_red">
+      「私にもデザイナーへの<br>
+      　なり方を教えてよ！」
+    </div>
+    <div class="bl_txtL">
+      なんて言われることが増え<br>
+      自然と自信が付いてきて
+    </div>
+    <div class="bl_txtL">
+      もっともっと頑張ろう！<br>
+      と思えるようになりました。
+    </div>
+    <div class="bl_txtL">
+      そんな最高の未来を<br>
+      手に入れることが出来たんです！
+    </div>
+    <div class="bl_cont bl_cont__dotted">
+      これが私の友人の<br>
+      実話です<br>
+    </div>
+    <div class="bl_txtL">
+      実はこのお話に出てくる<br>
+      ”後輩”が私なんです。
+    </div>
+    <div class="bl_txtL">
+      私はものすごく<br>
+      特別な技術を<br>
+      教えたわけではないんです。
+    </div>
+    <div class="bl_txtL">
+      デザイナーをして<br>
+      必要な知識と技術だけを<br>
+      丁寧に教えただけなんです。
+    </div>
+    <div class="bl_txtL">
+      デザインを教えてくれる<br>
+      学校やオンラインスクールでは<br>
+      実際の実務では使わない<br>
+      知識や技術を学ぶことがあります。
+    </div>
+    <div class="bl_txtL">
+      それでは時間もお金も無駄ですよね。
+    </div>
+    <div class="bl_txtL">
+      だったら必要な知識と技術を<br>
+      実戦形式で徹底的に<br>
+      繰り返し練習を<br>
+      してもらっただけなんです！
+    </div>
+    <div class="bl_txtL">
+      だからこそその先輩は<br>
+      最小限の時間で<br>
+      理想の人生を手に入れれたんです！
+    </div>
+    <div class="bl_txtL">
+      そんな話を聞いた<br>
+      別の友人が
+    </div>
+    <div class="bl_txtL">
+      「デザイナーになりたくて<br>
+      <span class="hp_red">イラストレーターの使い方</span>を<br>
+      教えてほしい」
+    </div>
+    <div class="bl_txtL">
+      と直接相談を<br>
+      もらうようになりました。
+    </div>
+    <div class="bl_txtL">
+      仕事がうまく行かず<br>
+      なにもかも楽しくない。
+    </div>
+    <div class="bl_txtL">
+      変わらなきゃ！<br>
+      ってわかって入るけど<br>
+      なにからやっていいかわからないし<br>
+      忙しいと言い訳して行動出来ない。
+    </div>
+    <div class="bl_txtL">
+      過去の私がそうだったから<br>
+      <span>気持ちは痛いほど分かる。</span>
+    </div>
+    <div class="bl_txtL">
+      そんな私でも<br>
+      時間やお金に縛れず<br>
+      自由に楽しく過ごせるように<br>
+      変われたからこそ
+    </div>
+    <div class="bl_txtL">
+      「今度は<span class="hp_red">私が教えたい</span>」<br>
+      「私のように<span class="hp_red">変えてあげたい</span>」
+    </div>
+    <div class="bl_txtL bl_txtL__borderB">
+      と、私は強く思い
+    </div>
+    <div class="bl_txtL">
+      「今度、この子に<br>
+      デザインの基礎を<br>
+      教えてあげたいんだ！」
+    </div>
+    <div class="bl_txtL">
+      と言いました
+    </div>
+    <div class="bl_txtL">
+      友人は私に
+    </div>
+    <div class="bl_txtL">
+      LINEで実際に教えていた<br>
+      デザインの<span class="hp_red">やり方や進め方</span>の基法を<br>
+      ノートにまとめて渡してくれました
+    </div>
+    <div class="bl_txtL">
+      そうしたら その子もIllustratorを<br>
+      <span class="hp_red">使いこなせる</span>ようになりました！<br>
+    </div>
+    <div class="bl_txtL">
+      そのノートに書かれた通りに<br>
+      私が彼女に教えてあげたところ
+    </div>
+    <div class="bl_cont">
+      ３ヶ月で<br>
+      デザインの基礎を<br>
+      <span class="hp_red">習得</span>しました<br>
+      <img src="/img/istockphoto-1298569940-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      そしてそのことも<br>
+      <span>
+        噂話のようにすぐに広まり<br>
+        私の元に<span class="hp_red">人が集まる</span>ことも<br>
+        多くなりました
+      </span>
+    </div>
+    <div class="bl_txtL">
+      その人達にも<br>
+      今回の方法を伝えてあげたら
+    </div>
+    <div class="bl_txtL hp_red">
+      「ありがとう！」<br>
+      「デザインって楽しい！」
+    </div>
+    <div class="bl_txtL hp_red">
+      「私もデザイナーになりたいな」
+    </div>
+    <div class="bl_txtL">
+      と<span class="hp_red">感謝の言葉</span>や<br>
+      <span class="hp_red">やる気に溢れた言葉</span>を<br>
+      たくさん貰い
+    </div>
+    <div class="bl_txtL">
+      友人はそれが<br>
+      <span class="hp_red">本当に嬉しくて嬉しくて</span><br>
+      たまらなかったそうです
+    </div>
+    <div class="bl_cont">
+      自分だけではなく<br>
+      他の人たちも
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">
+        新たな道を<br>
+        見つけたこと
+      </span>に<br>
+      自分のこと以上に<br>
+      大喜び！<br>
+      <img src="/img/istockphoto-1160193557-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      心から<br>
+      嬉しかったそうです。
+    </div>
+    <div class="bl_txtL">
+      仕事が嫌で<br>
+      泣くことも多かった友人が
+    </div>
+    <div class="bl_txtL">
+      仕事で通用する<br>
+      デザイナーになる方法を通して<br>
+      遂にデザイナーとして<br>
+      働くことができて
+    </div>
+    <div class="bl_txtL hp_red">
+      ・昔からの好きを仕事にできた<br>
+      ・憧れていたデザイナーになれた
+    </div>
+    <div class="bl_txtL">
+      という夢を<br>
+      叶えることができ<br>
+      本当に幸せそうです
+    </div>
+    <div class="bl_cont">
+      友人は現在22歳になり<br>
+      現役の<span class="hp_red">デザイナー</span>として<br>
+      <img src="/img/istockphoto-1301140216-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      楽しくバリバリ働いています！
+    </div>
+    <div class="bl_txtL">
+      そして、<br>
+      友人も実践してきて<br>
+      実際に叶えることのできた
+    </div>
+    <div class="bl_txtL">
+      仕事で通用する<br>
+      デザイナーになる方法
+    </div>
+    <div class="bl_txtL">
+      今は私が再び引き継いで<br>
+      友人に代わって<br>
+      多くの人に伝えています。
+    </div>
+    <div class="bl_txtL">
+      元々ノートにまとめていて<br>
+      使い勝手が悪いと感じてたので<br>
+      スマホでも見れるように
+    </div>
+    <div class="bl_txtL">
+      オンライン上で<br>
+      仕事で通用する<br>
+      デザイナーになる方法を<br>
+      伝授しています。
+    </div>
+    <div class="bl_txtL">
+      もし今<span class="hp_blue">悩んでいる</span>のなら<br>
+      これをきっかけに<br>
+      新しいことに<span class="hp_red">挑戦</span>してみませんか？  
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_red">新たな自分</span>に<br>
+      出会うことができます！
+    </div>
+    <div class="bl_txtL">
+      本来この記事は<br>
+      完全非公開なのですが
+    </div>
+    <div class="bl_txtL">
+      それでも今、<br>
+      あなたがこれを<br>
+      読んでくれているのも<br>
+      何かの縁だと思うので
+    </div>
+    <div class="bl_cont">
+      是非あなたにも<br>
+      デザイナーとして<br>
+      好きな時間に好きな場所で<br>
+      仕事をする為に
+    </div>
+    <div class="bl_cont">
+      デザインの<br>
+      <span class="hp_red">はじめ方、やり方</span>を<br>
+      体験して欲しいです！<br>
+      <img src="/img/istockphoto-882495390-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      私はフリーデザイナーの<br>
+      卵を育てる環境を設立したい！<br>
+      と思っています
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_blue">今の仕事が嫌</span>で<br>
+      <span class="hp_blue">諦めている人</span>、<br>
+    </div>
+    <div class="bl_txtL">
+      デザイナーになりたいけど<br>
+      <span class="hp_blue">何をしたら良いのか</span><br>
+      <span class="hp_blue">分からない人、</span>
+    </div>
+    <div class="bl_txtL">
+      に私が教えて変えます。
+    </div>
+    <div class="bl_txtL">
+      今の<span class="hp_blue">納得してない仕事</span>から<br>
+      自分の好きを仕事にするため<br>
+      デザインの基礎<br>
+      Illustratorの基礎を教えます！<br>
+      <span class="hp_red">納得のできる仕事</span>をしましょう！
+    </div>
+    <div class="bl_txtL">
+      同じ悩みを<br>
+      持っている人を救いたい、<br>
+      解決するお手伝いをしたい<br>
+      と思っています。
+    </div>
+    <div class="bl_txtL">
+      その過程から私は<br>
+      <span class="hp_red">フリーデザイナーの</span><br>
+      卵を育てる環境を<br>
+      設立したいです。
+    </div>
+    <div class="bl_txtL">
+      このマニュアルは心を込めて<br>
+      作ったものなので
+    </div>
+    <div class="bl_cont">
+      <span class="hp_red">デザインをやってみたい</span><br>
+      と本当に思う方に<br>
+      プレゼントしたい！<br>
+      <img src="/img/531f614b021cb7873275271c1e450c91.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      という思いから<br>
+      LINEにてプレゼントしています。
+    </div>
+    <div class="bl_txtL">
+      その実績、経験を積んで<br>
+      自信を付けながら
+    </div>
+    <div class="bl_cont hp_red">
+      私自身の成長のために<br>
+      今は無料です！
+    </div>
+    <div class="bl_txtL">
+      ①LINEでの対応は完全無料です
+    </div>
+    <div class="bl_txtL">
+      ②LINEでの個人情報管理
+    </div>
+    <div class="bl_txtL">
+      ③秘密は必ず守ります
+    </div>
+    <div class="bl_txtL">
+      ④ブロックをしない限り<br>
+      &nbsp;&nbsp;デザインの基礎を完璧にお教えします
+    </div>
+    <div class="bl_txtL">
+      この友人への指導がきっかけで
+    </div>
+    <div class="bl_txtL hp_red">
+      「今の仕事を辞めたい」<br>
+      「好きな事をしていたい」<br>
+      「デザインに挑戦してみたい」
+    </div>
+    <div class="bl_txtL">
+      と思ってる方々を<br>
+      <span>「もっと救いたい」</span><br>
+      強く思うようになり
+    </div>
+    <div class="bl_txtL">
+      そこで作り上げたのがこの
+    </div>
+    <div class="bl_cont">
+      <span class="hp_txtBgYellow">
+        デザインの基礎を<br>
+        完璧にするマニュアル
+      </span>
+    </div>
+    <div class="bl_txtL">
+      実際に友人に伝えた方法を<br>
+      ぎゅっと一冊にまとめたものを
+    </div>
+    <div class="bl_txtL">
+      無料でプレゼントしてます！
+    </div>
+    <div class="bl_cont bl_cont__dotted">
+      【内容】
+    </div>
+    <div class="bl_cont">
+      <span class="hp_txtBgYellow">
+        第1章<br>
+        デザイナーとは
+      </span>
+    </div>
+    <div class="bl_txtL">
+      「デザイン」や<br>
+      「デザイナー」
+    </div>
+    <div class="bl_txtL">
+      とはざっくりした言葉で、<br>
+      詳しいことは分からない方が<br>
+      多いと思います。
+    </div>
+    <div class="bl_txtL">
+      なのでそこは<br>
+      分かりやすく簡単に説明します。
+    </div>
+    <div class="bl_cont">
+      <span class="hp_txtBgYellow">
+        第2章<br>
+        デザインの始め方<br>
+        進め方について
+      </span>
+    </div>
+    <div class="bl_txtL">
+      デザインをする上で<br>
+      何から始めていいのか分からない。<br>
+      って思いませんか？
+    </div>
+    <div class="bl_txtL">
+      そこで私が、<br>
+      始め方やデザインする上での進め方、<br>
+      便利なツールなどを詳しくこの章で<br>
+      独占公開します。
+    </div>
+    <div class="bl_cont">
+      <span class="hp_txtBgYellow">
+        第3章<br>
+        Illustratorとは
+      </span>
+    </div>
+    <div class="bl_txtL">
+      デザインする上で、<br>
+      これさえあれば！
+    </div>
+    <div class="bl_txtL">
+      とゆっても過言ではない<br>
+      Illustratorについての説明と<br>
+      簡単な使い方を本書限定で<br>
+      ご紹介していきます。
+    </div>
+    <div class="bl_txtL">
+      このマニュアルを実践すれば<br>
+      あなたは今後
+    </div>
+    <div class="bl_txtL hp_red">
+      デザインの基礎が身につき<br>
+      自分の好きなことを<br>
+      仕事にできるかも！
+    </div>
+    <div class="bl_cont">
+      今回はこの体験授業を<br>
+      <span class="hp_red">限定で１０人</span><br>
+      にしようと思います<br>
+      <img src="/img/Unknown-4.jpeg" alt="">
+    </div>
+    <div class="bl_txtL">
+      少ないと思いますが<br>
+      これは嫌がらせではありません
+    </div>
+    <div class="bl_txtL">
+      一人一人に時間をかけたい<br>
+      最後の最後まで<br>
+      あなたをサポートしたい
+    </div>
+    <div class="bl_txtL">
+      そんな思いから<br>
+      <span class="hp_red">１０人限定</span>にしています
+    </div>
+    <div class="bl_cont hp_red">
+      一緒にデザインの基礎を<br>
+      学びましょう！！
+    </div>
+    <div class="el_arrow">
+      ↓↓↓
+    </div>
+    <div class="el_btn">
+      <a href="https://lin.ee/cWQGZcb" target="_blank">
+        <img class="un_line_btn" src="/img/howto_content1.png" width="250" alt="">
+      </a>
+    </div>
+    <div class="bl_txtL bl_txtL__borderB"></div>
+    <div class="bl_cont">
+      【追伸】
+    </div>
+    <div class="bl_txtL">
+      とにかく実践してあなたも<br>
+      効果を実感してみてください。
+    </div>
+    <div class="bl_txtL">
+      ただし、<br>
+      <span>
+        「デザイン簡単そうだし楽そう」<br>
+        「デザイナー面白そう」<br>
+        「プレゼントだけもらっちゃお」
+      </span><br>
+      といった
+      <span>
+        <span class="hp_blue">軽い気持ちの方</span>は<br>
+        受け取らないで下さい
+      </span>
+    </div>
+    <div class="bl_txtL">
+      受け取って頂いても<br>
+      効果が最大限に発揮されません。
+    </div>
+    <div class="bl_txtL">
+      なので絶対に<br>
+      受け取らないで下さい。
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_blue">今の仕事が嫌</span>で<br>
+      <span class="hp_red">少しでも変わりたい</span>と思っている<br>
+      そんな女性が
+    </div>
+    <div class="bl_txtL">
+      <span class="hp_red">自分の好きなこと</span>を仕事にし、<br>
+      <span class="hp_red">素敵なデザイナー</span>に<br>
+      なっていって欲しいです
+    </div>
+    <div class="bl_txtL">
+      またLINEなので<br>
+      気に入らなければいつでも
+    </div>
+    <div class="bl_cont">
+      ブロックして頂いても<br>
+      構いません。
+    </div>
+    <div class="bl_txtL">
+      それくらい自信のある<br>
+      公式LINEになっています。
+    </div>
+    <div class="bl_cont hp_red">
+      一緒にデザインの基礎を<br>
+      学びましょう！！
+    </div>
+    <div class="el_arrow">
+      ↓↓↓
+    </div>
+    <div class="el_btn">
+      <a href="https://lin.ee/cWQGZcb" target="_blank">
+        <img class="un_line_btn" src="/img/howto_content1.png" width="250" alt="">
+      </a>
+    </div>
+    <div class="bl_txtL">
+      ・絵が下手でも大丈夫！
+    </div>
+    <div class="bl_txtL">
+      ・デザインの知識がなくても！
+    </div>
+    <div class="bl_txtL">
+      ・今の自分を変えたいあなたに！
+    </div>
+    <div class="bl_txtL">
+      ・少しでもデザインに<br>
+      &nbsp;興味があるなら！
+    </div>
+    <div class="bl_txtL">
+      そんな人に届けたいです！！
+    </div>
+    <div class="bl_txtL">
+      あなたは<br>
+      もう立派な大人の女性です。
+    </div>
+    <div class="bl_cont">
+      1度きりの自分の人生<br>
+      <span class="hp_red">新たな挑戦</span>してみませんか？
+    </div>
+    <div class="bl_cont">
+      あなたの人生<br>
+      <span class="hp_red">もっともっと素敵</span>に<br>
+      夢見た未来図<br>
+      叶えませんか！<br>
+      <img src="/img/istockphoto-1135166272-612x612.jpg" alt="">
+    </div>
+    <div class="bl_txtL">
+      つい妄想してしまうほど<br>
+      最高に理想的な未来の為に<br>
+      思い切って行動してみて下さい。
+    </div>
+    <div class="bl_txtL">
+      そして、ぜひそんなあなたを<br>
+      全力で サポートさせてください。
+    </div>
+    <div class="bl_cont hp_red">
+      一緒にデザインの基礎を<br>
+      学びましょう！！
+    </div>
+    <div class="el_arrow">
+      ↓↓↓
+    </div>
+    <div class="el_btn">
+      <a href="https://lin.ee/cWQGZcb" target="_blank">
+        <img class="un_line_btn" src="/img/howto_content1.png" width="250" alt="">
+      </a>
+    </div>
+    <div class="bl_txtL">
+      ※LINEに飛べない場合は<br>
+      QRコードから友だち追加してね
+    </div>
+    <div class="bl_txtL">
+      ①LINEでの対応は完全無料です
+    </div>
+    <div class="bl_txtL">
+      ②LINEでの個人情報管理
+    </div>
+    <div class="bl_txtL">
+      ③秘密は必ず守ります
+    </div>
+    <div class="bl_txtL">
+      ④ブロックをしない限り<br>
+      &nbsp;デザインの基礎を完璧にお教えします
+    </div>
+    <div class="bl_txtL hp_mT40">
+      「最後まで読んで頂き<br>
+      ありがとうございました。
+    </div>
+    <div class="bl_txtL hp_mB100">
+      LINEでお会いしましょう！」
+    </div>
+  </div>
+</body>
+<footer id="js_footer" class="ly_footer">
+  <p>&copy; 2022 デザイナーシバ</p>
+</footer>
+
+<?php
+  //ポインターをファイルの先頭に戻す
+  rewind($fp);
+
+  //最新のアクセス数をファイルに書き込む
+  fwrite($fp, $count);
+
+  //ファイルのロックを解除する
+  flock($fp, LOCK_UN);
+
+  //ファイルを閉じる
+  fclose($fp);
+?>
+
+</html>
