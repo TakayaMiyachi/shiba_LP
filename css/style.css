@@ -106,6 +106,14 @@ img {
   display: flex;
   justify-content: center;
 }
+.bl_img_qr {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+.bl_img_qr img {
+  max-width: 200px;
+}
 @media screen and (min-width:480px) {
   .bl_txtL {
     text-align: left;
