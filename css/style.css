@@ -114,6 +114,9 @@ img {
 .bl_img_qr img {
   max-width: 200px;
 }
+.hp_underLine {
+  text-decoration: underline;
+}
 @media screen and (min-width:480px) {
   .bl_txtL {
     text-align: left;
