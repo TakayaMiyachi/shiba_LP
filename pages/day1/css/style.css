@@ -1,7 +1,10 @@
 @charset "utf-8";
 .bl_cont img {
   max-width: 320px;
+  max-height: 320px;
+  object-fit: contain;
 }
 .bl_txtL img {
   max-width: 320px;
+  object-fit: contain;
 }
