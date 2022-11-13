@@ -8,3 +8,19 @@
   max-width: 320px;
   object-fit: contain;
 }
+.hp_lineThrough {
+  text-decoration: line-through;
+}
+.bl_appBtn {
+  background-color: #2196f3;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 3px -3px rgba(0, 0, 0, .5);
+  transition: all .3s;
+  text-decoration: underline;
+}
+.bl_appBtn:hover {
+  background-color: #1e5f94;
+  box-shadow: none;
+}
